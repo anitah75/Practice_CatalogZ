@@ -3,14 +3,6 @@
     height: 24px;
     }
 
-/*.container-fluid{
-  display: inline-flexbox;
-  flex-direction: row;*/
-}
-
-/*.collapse{
-    justify-content: flex-end;
-}*/
 
 .tm-hero {
     width: fit-content;
@@ -19,8 +11,13 @@
     justify-content: center;
     align-items: center;
     background-position: center;
+    scroll-behavior:unset;
+    
    }
 
+h2{ 
+  color:teal;
+}   
    iframe{
     width: 400px; 
     height:350px; 
@@ -107,3 +104,62 @@
       span{
         text-align: center;
       }
+h1{ 
+  color: teal;
+  
+}
+
+.rphotos{
+  padding-left: 25px;
+  padding-right:25px;
+}
+
+/* Style the search field */
+
+form, input, button {
+  display: flex;
+  overflow-wrap: fixed;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 0px;
+  float: left;
+  width: 20%;
+  background: #f1f1f1;
+  position: relative;
+}
+
+/* Style the submit button */
+form.example button {
+  float: center;
+  width: 8%;
+  padding: 3px;
+  background:teal;
+  color: white;
+  font-size: 15px;
+  position: relative;
+  
+    
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  line-height: 2.5rem;
+  
+}
+
+form.example button:hover {
+  background:teal;
+  border-color: teal;
+  width: 15%;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table ;
+}
+
+
+
