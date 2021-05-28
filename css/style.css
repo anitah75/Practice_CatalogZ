@@ -15,6 +15,7 @@
     
    }
 
+
 h2{ 
   color:teal;
 }   
@@ -115,11 +116,6 @@ h1{
 }
 
 /* Style the search field */
-
-form, input, button {
-  display: flex;
-  overflow-wrap: fixed;
-}
 
 form.example input[type=text] {
   padding: 10px;
