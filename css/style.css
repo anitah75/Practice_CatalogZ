@@ -6,14 +6,13 @@
     /* Banner Photo*/
     .banner {
       background-image: url("../img/hero.jpg");
-      min-height: 200px;
+      min-height: 252px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
       align-self: center;
       }
-   
+  
 
 /* Style the Search field */
 
@@ -38,6 +37,8 @@ form.example button {
   cursor: pointer;
   line-height: 2.5rem;
   }
+
+
 
 form.example button:hover {
   background:teal;
@@ -272,3 +273,67 @@ h1{
     background-color: teal;
 }
 
+/*Photos effect */
+figure.effect-ming{
+  background-color: #030c17;
+  background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-position-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(3, 12, 23);
+}
+.tm-video-item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: none;
+}  
+  figcaption::before
+  figcaption::after
+
+figure {
+  margin: 0 0 1rem;
+}
+figure.effect-ming.tm-video-item {
+}
+
+::after, ::before{
+  box-sizing: border-box;
+}
+figure.effect-ming.tm-video-item {
+}
+figcaption::before{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 2px solid #fff;
+  border-top-color: rgb(255, 255, 255);
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    box-shadow: 0 0 0 30px rgb(255 255 255 / 20%);
+  content: '';
+  opacity: 0;
+  transform: scale3d(1.4,1.4,1);
+}
