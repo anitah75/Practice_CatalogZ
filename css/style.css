@@ -1,24 +1,62 @@
 .logoimg {
     width: 30px;
     height: 24px;
-    }
+    } 
 
+    /* Banner Photo*/
+    .banner {
+      background-image: url("../img/hero.jpg");
+      min-height: 200px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      align-self: center;
+      }
+   
 
-.tm-hero {
-    width: fit-content;
-    max-height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    scroll-behavior:unset;
-    
-   }
+/* Style the Search field */
 
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 0px;
+  float: left;
+  background: #f1f1f1;
+  position: relative;
+}
+
+/* Style the submit button */
+form.example button {
+  float: center;
+  padding: 3px;
+  background:teal;
+  color: white;
+  font-size: 15px;
+  position: relative;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  line-height: 2.5rem;
+  }
+
+form.example button:hover {
+  background:teal;
+  border-color: teal;
+  width: 15%;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table ;
+}  
 
 h2{ 
   color:teal;
 }   
+
+/* Our location section */ /*Map*/
    iframe{
     width: 400px; 
     height:350px; 
@@ -33,14 +71,16 @@ h2{
     color:rgb(235, 142, 212);
 }
 
-    .fa {
-        padding: .8px;
-        font-size: 25px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
+/*links to social media */
+  .fa {
+    padding: .8px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
       }
+
       .fa-facebook {
         background: #3B5998;
         color: white;
@@ -60,19 +100,20 @@ h2{
         color: white;
       }
 
-      ul{
-        list-style-type: none;
-      }
+  ul{
+   list-style-type: none;
+    }
 
-      h5{
-        color:teal; 
-      }
+  h5{
+   color:teal; 
+   }
 
-      h3{
-        color:teal; 
-      }
+  h3{
+    color:teal; 
+    }
 
-      .form-select{
+  /* Form Contact Page Section*/
+    .form-select{
           color:teal;
           font-size: 95%;
       }
@@ -80,6 +121,7 @@ h2{
           color: teal !important;;
       }
       
+  /*Our Address Information section */
       .list-group-item{
           width: flex;
           border: 0;
@@ -99,7 +141,8 @@ h2{
         height: min-content;
       }
 
-      footer{
+  /*footer section */
+    footer{
         background-color: rgb(238, 230, 230);
       }
       span{
@@ -109,53 +152,123 @@ h1{
   color: teal;
   
 }
-
+/* Representative people in the company section */
 .rphotos{
   padding-left: 25px;
   padding-right:25px;
 }
 
-/* Style the search field */
 
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 0px;
-  float: left;
-  width: 20%;
-  background: #f1f1f1;
-  position: relative;
-}
-
-/* Style the submit button */
-form.example button {
-  float: center;
-  width: 8%;
-  padding: 3px;
-  background:teal;
-  color: white;
-  font-size: 15px;
-  position: relative;
-  
-    
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-  line-height: 2.5rem;
-  
-}
-
-form.example button:hover {
-  background:teal;
-  border-color: teal;
-  width: 15%;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table ;
+/* Photos pages buttons */
+.input_paging {
+  width: 40px;
+  border-radius: 0;
+  border: 1px solid #CCCCCC;
+  background: #f4f4f4;
+  padding: 0.2rem 0;
 }
 
 
+/* Navbar Section */
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand {
+  color:teal;
+  font-size: 1.6rem;
+  font-style:normal;
+}
+
+.navbar-brand i {
+  font-size: 2rem;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+
+.nav-link {
+  color: #666666;
+  border-bottom: 4px solid transparent;
+  font-size: 1.2rem;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color:#666666;
+}
+
+.nav-link-1.active,
+.nav-link-1:hover {
+  border-color: #33CCFF;
+}
+
+.nav-link-2.active,
+.nav-link-2:hover {
+  border-color: #FF6666;
+}
+
+.nav-link-3.active,
+.nav-link-3:hover {
+  border-color: #33CC66;
+}
+
+.nav-link-4.active,
+.nav-link-4:hover {
+  border-color: #CC66CC;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+@media (max-width: 992px){
+  .navbar-collapse {
+      position: fixed;
+      top: 50px;
+      right: 0px;
+      background: white;
+      width: 150px;
+      padding: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-item:last-child { 
+      margin-right: 0; 
+  }
+}
+
+/*buttons at the end of the cards*/
+.btn_lg {
+  border: none;
+  padding: 12px 50px 14px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+
+.btn_color{
+  background-color: teal!important;
+}
+
+.btn_color:hover{
+  background-color: teal!important;
+}
+.btn_sm{
+  background-color: teal!important;
+  padding: 12px 25px 14px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    color: #999;
+    background-color: #EEEEEE;
+}
+.btn_sm:hover,
+.btn_sm:focus,
+.btn_sm.active{
+    background-color: teal;
+}
 
